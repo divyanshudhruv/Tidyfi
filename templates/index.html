@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TidyFi</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.svg') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('style_css') }}">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="textSmall">TIDYFI (v0.1)</div>
+      <div class="textBig">Keep It Tidy</div>
+      <div class="textMid">
+        Effortlessly Sort, Organize, and Clean Your Files with a Single Click
+      </div>
+
+      <form method="POST">
+        <div class="form">
+          <input
+            type="text"
+            id="directory"
+            name="directory"
+            placeholder="e.g., /path/to/directory"
+          />
+          <button type="submit" class="button">Organize —</button>
+        </div>
+      </form>
+      <p class="message">{{ message }}</p>
+    </div>
+
+    <script>
+      fetch("https://your-app-name.onrender.com/organize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ directory: "/path/to/directory" }),
+      });
+    </script>
+  </body>
+</html>
