@@ -48,6 +48,8 @@
 > 4. Run the flask application:  
 >    **`python app.py`**
 
+<br>
+
 ## ☢️ Live preview
 
 > **[Tidyfi](https://tidyfi.onrender.com/)**
