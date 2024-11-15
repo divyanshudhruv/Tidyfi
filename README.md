@@ -52,4 +52,8 @@
 
 ## ☢️ Live preview
 
-> **[Tidyfi](https://tidyfi.onrender.com/)**
+> **[Render](https://tidyfi.onrender.com/)**
+
+> **[Netlify](https://tidyfi.netlify.app/)**
+
+
