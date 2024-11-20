@@ -8,9 +8,12 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
     />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.svg') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('style_css') }}">
-
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='logo.svg') }}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{{ url_for('style_css') }}" />
   </head>
   <body>
     <div class="container">
@@ -33,13 +36,32 @@
       </form>
       <p class="message">{{ message }}</p>
     </div>
-
+    <div class="footerText">
+      <div class="text" onclick="github()">Github</div>
+    </div>
     <script>
       fetch("https://your-app-name.onrender.com/organize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ directory: "/path/to/directory" }),
       });
+
+      function github() {
+        window.open("https://github.com/divyanshudhruv/tidyfi");
+      }
+
+      /*Todo
+      function modeAlert() {
+        window.alert("Under development.");
+      }
+      */
+    </script>
+    <script>
+      window.onbeforeunload = function () {
+        fetch("/shutdown", { method: "POST" })
+          .then((response) => response.json())
+          .then((data) => console.log("Server shutdown initiated"));
+      };
     </script>
   </body>
 </html>

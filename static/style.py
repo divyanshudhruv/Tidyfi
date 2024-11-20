@@ -186,6 +186,9 @@ input:focus {
     margin-left: 5px;
     margin-top: 20px;
   }
+  body{
+    overflow:hidden;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -201,7 +204,37 @@ input:focus {
   .form {
     width: 100vw !important;
   }
+    body{
+    overflow:hidden;
+  }
 }
 
+
+.footerText {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerText .text {
+  font-family: monospace;
+  color: #47487b;
+  display: flex;
+  position: relative;
+  background-color:none;
+  padding-inline: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footerText .text:hover{
+  background-color: #eee;
+}
     """
     return Response(css, mimetype="text/css")
