@@ -34,25 +34,42 @@
 
 <br>
 
-## 🚀 How to Run
 
-> 1. Clone the repo:  
->    **`git clone https://github.com/yourusername/Tidyfi.git`**
+## 🚀 How to Run 
 
-> 2. Navigate to directory:  
->    **`cd Tidyfi`**
+> 1. Download the **`executable`** file:  
 
-> 3. Install the required dependencies:  
->    **`pip install -r requirements.txt`**
+> 2. **`Click`** to run the program
 
-> 4. Run the flask application:  
->    **`python app.py`**
+<br>
+
+## 🔨 Installation (for developement)
+
+> 1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/Tidyfi.git
+```
+
+> 2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+> 3.Run the Flask app:
+
+```bash
+python app.py
+```
 
 <br>
 
 ## ☢️ Live preview
 
-> **[Render](https://tidyfi.onrender.com/)**
+<!--
+**[Render(not)](https://tidyfi.onrender.com/)**
+-->
 
 > **[Netlify](https://tidyfi.netlify.app/)**
 
