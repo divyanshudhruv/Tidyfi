@@ -26,6 +26,8 @@
 
 > - Built with **`Python`** and **`Flask`** for efficient backend.
 
+> - [DEV] Multiple **`file selection`** feature to prevent program to select those.  
+
 <br>
 
 ## 👨‍💻 Author
