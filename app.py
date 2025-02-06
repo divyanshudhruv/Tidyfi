@@ -3,6 +3,7 @@ import os
 import shutil
 from static.style import get_css
 
+# Create app
 app = Flask(__name__)
 
 # Define file categories and extensions
@@ -40,6 +41,7 @@ def organize_files(directory):
 @app.route('/style.css')
 def style_css():
     return get_css()
+    
 # Route to render the HTML template
 @app.route("/", methods=["GET", "POST"])
 def index():
