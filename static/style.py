@@ -1,4 +1,4 @@
-from flask import Response
+from flask import Response;
 
 def get_css():
     css = """
